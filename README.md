@@ -29,6 +29,15 @@ Challenges include:
 
 ---
 
+## 💼 Business Impact
+
+- Reduces loan default risk through probability-based decisioning  
+- Improves consistency in credit approvals  
+- Balances risk vs opportunity using threshold optimization  
+- Translates ML predictions into actionable business decisions  
+
+---
+
 ## 🧠 Solution Approach
 
 ### 🔹 Data Processing
@@ -95,6 +104,24 @@ Users can:
 * Reduces potential financial loss
 * Improves consistency in decision-making
 * Bridges ML predictions with business logic
+
+---
+
+## 🧠 Key Innovation: Threshold Optimization
+
+Instead of using the default 0.5 cutoff, the threshold was reduced to **0.4** to:
+
+- Increase recall (catch more risky applicants)
+- Reduce financial loss from missed defaulters
+- Align model behavior with real-world risk tolerance
+
+This transforms the model from a classifier into a **decision system**.
+
+---
+
+## ⚙️ System Flow
+
+User Input → Feature Engineering → ML Model → Probability → Threshold Logic → Decision
 
 ---
 
@@ -166,6 +193,25 @@ python train.py
 streamlit run app.py
 ```
 
+---
+
+## ▶️ Quick Demo
+
+# git clone <your-repo-link>
+# cd ai-credit-risk-scoring-system
+# pip install -r requirements.txt
+# streamlit run app.py
+
+---
+
+## 6) No “results snapshot”
+
+## 📌 Results Snapshot
+
+- ROC-AUC: ~0.93  
+- Threshold: 0.4  
+- Output: Probability + Risk Classification + Recommendation 
+ 
 ---
 
 ## 🔮 Future Improvements
